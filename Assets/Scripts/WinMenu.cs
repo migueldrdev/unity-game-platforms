@@ -21,7 +21,7 @@ public class WinMenu : MonoBehaviour
     public void Next()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (sceneIndex < 3)
+        if (sceneIndex < 5)
             SceneManager.LoadScene(sceneIndex + 1);
         else
             MainMenu();
