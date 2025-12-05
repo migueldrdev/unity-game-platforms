@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         pauseMenu = GetComponent<PauseMenu>();
         animator = transform.Find("ty").GetComponent<Animator>();
     }
+
     void Update() {
         if (pauseMenu.paused)
             return;
@@ -51,12 +52,13 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isRunning", false);
                 animator.SetBool("isIdling", false);
             }                          
-        }
-        else
+        }else
         {
             moveDirection = new Vector3(xDisplacement * speed, moveDirection.y, zDisplacement * speed);
         }
+
         moveDirection.y += gravity * Time.deltaTime;
+
         if (moveDirection.x != 0.0f || moveDirection.z != 0.0f)
         {
             float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;

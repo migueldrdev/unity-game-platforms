@@ -58,4 +58,20 @@ public class MovePlatform : MonoBehaviour
             }                
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.name == "Player" || collision.gameObject.name == "ty")
+        {
+            collision.transform.parent = transform; // Lo hacemos hijo de la plataforma
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.name == "Player" || collision.gameObject.name == "ty")
+        {
+            collision.transform.parent = null; // Lo liberamos para que sea independiente de nuevo
+        }
+    }
 }
