@@ -1,2 +1,10 @@
 .plastic/
 Library/
+Temp/
+Logs/
+obj/
+.vs/
+.vscode/
+.idea/
+.csproj
+.sln
