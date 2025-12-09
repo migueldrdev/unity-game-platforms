@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1782448516829800393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3362804320507941002}
+  - component: {fileID: 1260309768497989959}
+  m_Layer: 0
+  m_Name: ProceduralGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3362804320507941002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782448516829800393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.116856, y: 13.98941, z: 89.77303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260309768497989959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782448516829800393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6beda8808ab9f22b270bd74abd8f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformPrefabs:
+  - {fileID: 6701051070976725465, guid: b278940dbbcb6e3f787812154ace43e3, type: 3}
+  - {fileID: 890348476254067740, guid: 739e8d81fa96dd70f9b76b088a4fe5b4, type: 3}
+  - {fileID: 4817775713132465536, guid: 4eea305d8e3300dad943e17c86fa103f, type: 3}
+  - {fileID: 4274350605663794516, guid: 31d2e93a97b3596f7838e0c394a924a0, type: 3}
+  - {fileID: 8074373310312299190, guid: f556b3783132365d782f254f46bc23c9, type: 3}
+  - {fileID: 4657432889991069767, guid: 46c8eef5aaf9a071587ce643b3c14010, type: 3}
+  - {fileID: 4694877561670717994, guid: 2bf7ca91b6ee65e3aa8a7a51f7fb9f9b, type: 3}
+  - {fileID: 5561514891688769548, guid: 117746f3ddc923519a22ee38bcd205f2, type: 3}
+  - {fileID: 4355323877803189819, guid: 72d9241bedeb71abf9937880e284d0f2, type: 3}
+  - {fileID: 4499289082160030559, guid: ec74b1d3d8bec291c8f9816ee1eb6cf8, type: 3}
+  - {fileID: 9198144543611515351, guid: 360c0391dad81b5dfb344ecc19bf8161, type: 3}
+  - {fileID: 4499289082160030559, guid: ec74b1d3d8bec291c8f9816ee1eb6cf8, type: 3}
+  - {fileID: 8259235292947099245, guid: 446e9c34bc8d14b7bbdd76cfbecec787, type: 3}
+  - {fileID: 4984275385867966088, guid: cf82a29da64dc2070829d8a6936a949f, type: 3}
+  - {fileID: 1863018153837186405, guid: 9408ded641bfb9433b595defb19566f6, type: 3}
+  - {fileID: 879653722993760852, guid: e1309eafcba4bfe0a9c007a0ceceabfd, type: 3}
+  - {fileID: 2451151456819925814, guid: ae4b5db37526ffb8eb4f9b164f34f108, type: 3}
+  - {fileID: 8547793846684579899, guid: 72b4ce882f5f4ea23ba29625e059ed2d, type: 3}
+  - {fileID: 5021708032299855507, guid: d6663252c525aef32a06144a73b3a885, type: 3}
+  - {fileID: 328297140333637820, guid: 5f965afd5e2105b088a35a21611f94e7, type: 3}
+  - {fileID: 4007060758657167402, guid: fd254195cd74290248a9296795aad17b, type: 3}
+  - {fileID: 1095900492764288109, guid: 942bad0cb91600b25bce70d7dc1e4500, type: 3}
+  startPlatformPrefab: {fileID: 1208954540755128583, guid: 309a12c7e5b96ead79424f13fb6a50bb, type: 3}
+  winFlagPrefab: {fileID: 7965015581557869775, guid: 50a571a47a17f5b6d8f4a0646eae6ead, type: 3}
+  platformCount: 25
+  minStepX: 3
+  maxStepX: 6
+  minStepY: -1
+  maxStepY: 2

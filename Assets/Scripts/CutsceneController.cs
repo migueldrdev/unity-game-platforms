@@ -10,19 +10,15 @@ public class CutsceneController : MonoBehaviour
 
     public GameObject mainCamera;
 
-    private string level;
     private Animator animator;
-    // Start is called before the first frame update
+    
     void Start()
     {
         animator = GetComponent<Animator>();
-        level = SceneManager.GetActiveScene().name;
-        if (level == "Level01")
-            animator.SetBool("isLevel01", true);
-        if (level == "Level02")
-            animator.SetBool("isLevel02", true);
-        if (level == "Level03")
-            animator.SetBool("isLevel03", true);
+        string level = SceneManager.GetActiveScene().name;
+        
+        // Activa el parámetro correspondiente al nivel actual
+        animator.SetBool("is" + level, true);
     }
 
     // Update is called once per frame
